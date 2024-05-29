@@ -32,3 +32,6 @@ let g:vimwiki_list = [{
     \ 'ext': '.md'
     \ }]
 
+command! VimwikiStart :edit ~/Documents/vimwiki/index.md
+autocmd BufRead,BufNewFile index.md if expand("%:p:h") ==# expand("~/.config/nvim") | edit ~/Documents/vimwiki/index.md | endif
+
