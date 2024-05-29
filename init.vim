@@ -24,3 +24,11 @@ Plug 'vimwiki/vimwiki'
 call plug#end()
 
 "autocmd VimEnter * VimwikiIndex
+"
+"" Vimwiki configuration
+let g:vimwiki_list = [{
+    \ 'path': '~/Documents/vimwiki/',
+    \ 'syntax': 'markdown',
+    \ 'ext': '.md'
+    \ }]
+
